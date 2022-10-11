@@ -20,16 +20,18 @@ def addviolation(request):
 
 def showviolation(request):
     this_driver=Driver.objects.get(id=request.session['driver_id'])
+    # this_violation = Violation.this_driver.all()
     context={
         'allviolations': Violation.objects.all(),
-        'this_driver':Driver.objects.get(id=request.session['driver_id'])
+        'this_driver':Driver.objects.get(id=request.session['driver_id']),
+        # 'this_violation': this_violation,
     }
     return render(request,'showviolation.html',context)
 
 
 def home(request):
     return render(request,'home.html')
-    
+
 def reg(request):
         errors = Driver.objects.basic_validator(request.POST)
         users=Driver.objects.all()
