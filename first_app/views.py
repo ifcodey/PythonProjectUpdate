@@ -170,6 +170,9 @@ def add_vio(request):
     return redirect('/addviolation')
 
 
+def rule(request):
+    return render(request, 'rule.html')
+    
 def logout(request):
     
     if 'driver_id' in request.session:

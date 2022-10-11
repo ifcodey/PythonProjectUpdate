@@ -19,6 +19,6 @@ urlpatterns = [
     path('addviolation',views.addviolation),
     path('add', views.add_vio),
     path('showviolation', views.showviolation),
-
+    path('rule', views.rule),
     path('home',views.home),
 ]

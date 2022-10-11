@@ -1,0 +1,63 @@
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: rgba(187, 218, 218, 0.543);
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d86;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  margin-top: 5px;
+
+}
+
+tbody td:hover {
+  color: rgba(24, 24, 220, 0.457);
+  background-color: rgba(100, 56, 98, 0.205);
+
+}
+
+thead td {
+  color: rgba(220, 53, 24, 0.457);
+
+}
+
+table {
+  margin-top: 20px;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 10px 2px 10px;
+  align-items: center;
+}
+
+th,
+td:before {
+  color: rgb(85, 101, 221);
+}

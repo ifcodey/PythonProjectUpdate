@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My violations</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static  'rule.css'%}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="example" rel="stylesheet/scss" type="text/css">
+</head>
+
+<body>
+    <section>
+        <div class="topNav">
+            <h1>Rules</h1>
+            <p><a href="/logout">Logout</a></p>
+        </div>
+
+        <table id="customers">
+            <thead>
+                <tr>
+                    <th>Group Rule 1</th>
+                    <th>Group Rule 2</th>
+                    <th>Group Rule 3</th>
+                    <th>Group Rule 4</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>
+                        <p>Drive at a safe speed!</p>
+                        <p> Do not drive on the shoulder!</p>
+                        <p> Leave passing lanes open!</p>
+                    </td>
+                    <td>
+                        <p>Maintain a safe distance between vehicles!</p>
+                        <p>Expressways are one-way traffic!</p>
+                        <p>Warn drivers behind you about traffic jams ahead of you!</p>
+                    </td>
+                    <td>
+                        <p>Do not cut off other vehicles!</p>
+                        <p>Be aware of the angle of your headlight beams!</p>
+                        <p>Do a thorough check and adjustment before departure!</p>
+                    </td>
+                    <td>
+                        <p>Keep your eyes on the road!</p>
+                        <p>Always drive at a safe speed and within the speed limit!</p>
+                        <p>Do not stop or park on the expressway!</p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

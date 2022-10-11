@@ -1,9 +1,10 @@
 h1 {
     text-align: center;
 }
+
 section {
     margin-top: 5px;
-    
+
 }
 
 tbody td:hover {
@@ -11,28 +12,38 @@ tbody td:hover {
     background-color: rgba(100, 56, 98, 0.205);
 
 }
+
 thead td {
     color: rgba(220, 53, 24, 0.457);
-    
+
 }
+
 table {
     margin-top: 20px;
 }
-.topNav{
+
+.topNav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 2px 10px 2px 10px;
     align-items: center;
 }
-#button{
+
+#button {
     background-color: rgba(60, 20, 240, 0.267);
     color: rgba(37, 37, 32, 0.884);
-    box-shadow: 2px 1px  rgb(224, 9, 188);
+    box-shadow: 2px 1px rgb(224, 9, 188);
     margin-left: 10px;
 }
+
 #button:hover {
     background-color: rgba(60, 20, 240, 0.267);
     color: rgba(243, 243, 243, 0.884);
     box-shadow: 2px 1px rgb(224, 9, 188);
     margin-left: 10px;
+}
+
+th,
+td:before {
+    color: #dd5;
 }

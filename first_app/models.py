@@ -12,8 +12,10 @@ class DriverManager(models.Manager):
         errors = {}
         if len(postData['fullname']) < 10:
             errors["fullname"] = "Your name should be at least 10 characters"
+
         # if  datetime.date.today()-postData['birthday'] <= 18  :
         #     errors["birthday"] = "Your Age Must be more than  or equal 18"
+
         if postData['cpassword'] != postData['password']:
             errors["cpassword"] = "The Password doesnt match"
         EMAIL_REGEX = re.compile(
