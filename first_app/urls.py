@@ -13,6 +13,7 @@ urlpatterns = [
 
     # for login to User
     path('login',views.login),
+    path('logout', views.logout),
     path('signin',views.signin),
     path('policeinfo',views.policeinfo),
     path('addviolation',views.addviolation),
