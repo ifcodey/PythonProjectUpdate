@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My violations</title>
+</head>
+<body>
+    <h1>My violations</h1>
+    <table border=1>
+        <tr>
+            <th>Violation</th>
+            <th>Police name</th>
+            <th>Location</th>
+            <th>Fees</th>
+            <th>expiary date</th>
+        </tr>
+        {% for vio in allviolations%}
+        {% if this_driver.id == vio.driver.id %}
+
+        <tr>
+            <td>{{vio.id}}</td>
+            <td>{{vio.police.full_name}}</td>
+            <td>{{vio.location}}</td>
+            <td>{{vio.fees}}</td>
+            <td>{{vio.expierd_date_violation}}</td>
+            
+        </tr>
+       
+        {%endif%}
+        {%endfor%}
+    </table>
+</body>
+</html>
