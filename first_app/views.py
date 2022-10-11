@@ -29,6 +29,7 @@ def showviolation(request):
 
 def home(request):
     return render(request,'home.html')
+    
 def reg(request):
         errors = Driver.objects.basic_validator(request.POST)
         users=Driver.objects.all()
@@ -45,6 +46,7 @@ def reg(request):
             return redirect('/login')
         password= request.POST['password']
         pw_hash= bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode() 
+        
         Driver.objects.create (
             full_name=request.POST['fullname'],
             birthday=request.POST['birthday'],
